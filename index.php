@@ -1,4 +1,25 @@
-<?php
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+</head>
+<body>
+    <h1>Calcolo IMC</h1>
+
+    <form method="post">
+        <label for="peso">Peso (kg):</label>
+        <input type="number" step="0.01" name="peso" required><br><br>
+
+        <label for="altura">Altura (m):</label>
+        <input type="number" step="0.01" name="altura" required><br><br>
+
+        <button type="submit">Calcular</button>
+    </form>
+
+    <?php
   $peso = $_POST["peso"];
   $altura = $_POST["altura"];
 
@@ -20,25 +41,5 @@
 }
 
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IMC</title>
-</head>
-<body>
-    <h1>Calcolo IMC</h1>
-
-    <form method="post">
-        <label for="peso">Peso (kg):</label>
-        <input type="number" step="0.01" name="peso" required><br><br>
-
-        <label for="altura">Altura (m):</label>
-        <input type="number" step="0.01" name="altura" required><br><br>
-
-        <button type="submit">Calcular</button>
-    </form>
 </body>
 </html>
